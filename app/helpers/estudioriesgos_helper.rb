@@ -1,0 +1,2 @@
+module EstudioriesgosHelper
+end

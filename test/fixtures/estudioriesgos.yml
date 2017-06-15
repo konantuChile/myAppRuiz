@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idestadoproceso: 1
+  idanalista: 1
+  fechainicioestudioriesgo: 2017-06-15
+  fechaterminoestudioriesgo: 2017-06-15
+  observacionestudio: MyText
+
+two:
+  idestadoproceso: 1
+  idanalista: 1
+  fechainicioestudioriesgo: 2017-06-15
+  fechaterminoestudioriesgo: 2017-06-15
+  observacionestudio: MyText

@@ -1,0 +1,41 @@
+<%= form_for(@solicitudinforme) do |f| %>
+  <% if @solicitudinforme.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@solicitudinforme.errors.count, "error") %> prohibited this solicitudinforme from being saved:</h2>
+
+      <ul>
+      <% @solicitudinforme.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idtipomoneda %><br>
+    <%= f.text_field :idtipomoneda %>
+  </div>
+  <div class="field">
+    <%= f.label :idanalista %><br>
+    <%= f.number_field :idanalista %>
+  </div>
+  <div class="field">
+    <%= f.label :idejecutivo %><br>
+    <%= f.number_field :idejecutivo %>
+  </div>
+  <div class="field">
+    <%= f.label :idestadoproceso %><br>
+    <%= f.number_field :idestadoproceso %>
+  </div>
+  <div class="field">
+    <%= f.label :fechahoraingreso %><br>
+    <%= f.date_select :fechahoraingreso %>
+  </div>
+  <div class="field">
+    <%= f.label :montosolicitado %><br>
+    <%= f.text_field :montosolicitado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

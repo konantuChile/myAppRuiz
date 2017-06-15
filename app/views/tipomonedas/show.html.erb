@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombretipomoneda:</strong>
+  <%= @tipomoneda.nombretipomoneda %>
+</p>
+
+<p>
+  <strong>Fechaingresotipomo:</strong>
+  <%= @tipomoneda.fechaingresotipomo %>
+</p>
+
+<%= link_to 'Edit', edit_tipomoneda_path(@tipomoneda) %> |
+<%= link_to 'Back', tipomonedas_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Informacioncomercials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idtipomoneda</th>
+      <th>Correlativoinformacion</th>
+      <th>Fechainforcomercial</th>
+      <th>Montoinforcomercial</th>
+      <th>Fechahoraingreso</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @informacioncomercials.each do |informacioncomercial| %>
+      <tr>
+        <td><%= informacioncomercial.idtipomoneda %></td>
+        <td><%= informacioncomercial.correlativoinformacion %></td>
+        <td><%= informacioncomercial.fechainforcomercial %></td>
+        <td><%= informacioncomercial.montoinforcomercial %></td>
+        <td><%= informacioncomercial.fechahoraingreso %></td>
+        <td><%= link_to 'Show', informacioncomercial %></td>
+        <td><%= link_to 'Edit', edit_informacioncomercial_path(informacioncomercial) %></td>
+        <td><%= link_to 'Destroy', informacioncomercial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Informacioncomercial', new_informacioncomercial_path %>

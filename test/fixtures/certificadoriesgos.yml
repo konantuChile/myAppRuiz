@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idcliente: MyString
+  idtipomoneda: MyString
+  idanalista: 1
+  idencargado: 1
+  fechacertificadoriesgo: 2017-06-15
+  montoaprobado: 9.99
+
+two:
+  idcliente: MyString
+  idtipomoneda: MyString
+  idanalista: 1
+  idencargado: 1
+  fechacertificadoriesgo: 2017-06-15
+  montoaprobado: 9.99

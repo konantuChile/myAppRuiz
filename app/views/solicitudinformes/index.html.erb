@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Solicitudinformes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idtipomoneda</th>
+      <th>Idanalista</th>
+      <th>Idejecutivo</th>
+      <th>Idestadoproceso</th>
+      <th>Fechahoraingreso</th>
+      <th>Montosolicitado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @solicitudinformes.each do |solicitudinforme| %>
+      <tr>
+        <td><%= solicitudinforme.idtipomoneda %></td>
+        <td><%= solicitudinforme.idanalista %></td>
+        <td><%= solicitudinforme.idejecutivo %></td>
+        <td><%= solicitudinforme.idestadoproceso %></td>
+        <td><%= solicitudinforme.fechahoraingreso %></td>
+        <td><%= solicitudinforme.montosolicitado %></td>
+        <td><%= link_to 'Show', solicitudinforme %></td>
+        <td><%= link_to 'Edit', edit_solicitudinforme_path(solicitudinforme) %></td>
+        <td><%= link_to 'Destroy', solicitudinforme, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Solicitudinforme', new_solicitudinforme_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Estadoprocesos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombreestadoproceso</th>
+      <th>Fechaingresoestado</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estadoprocesos.each do |estadoproceso| %>
+      <tr>
+        <td><%= estadoproceso.nombreestadoproceso %></td>
+        <td><%= estadoproceso.fechaingresoestado %></td>
+        <td><%= link_to 'Show', estadoproceso %></td>
+        <td><%= link_to 'Edit', edit_estadoproceso_path(estadoproceso) %></td>
+        <td><%= link_to 'Destroy', estadoproceso, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estadoproceso', new_estadoproceso_path %>

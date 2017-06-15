@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  foliocertificadoriesgo: 9.99
+  nombreinstitucionfinanciera: MyText
+  direccioninstitucionfinanciera: MyText
+  emailinstitucionfinanciera: MyText
+  contactoinstitucionfinanciera: MyText
+  fechaingresoinstfinanciera: 2017-06-15
+
+two:
+  foliocertificadoriesgo: 9.99
+  nombreinstitucionfinanciera: MyText
+  direccioninstitucionfinanciera: MyText
+  emailinstitucionfinanciera: MyText
+  contactoinstitucionfinanciera: MyText
+  fechaingresoinstfinanciera: 2017-06-15

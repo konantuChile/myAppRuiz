@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombreempleado:</strong>
+  <%= @empleado.nombreempleado %>
+</p>
+
+<p>
+  <strong>Apellidopaternoempleado:</strong>
+  <%= @empleado.apellidopaternoempleado %>
+</p>
+
+<p>
+  <strong>Apellidomaternoempleado:</strong>
+  <%= @empleado.apellidomaternoempleado %>
+</p>
+
+<p>
+  <strong>Emailempleado:</strong>
+  <%= @empleado.emailempleado %>
+</p>
+
+<p>
+  <strong>Fechaingresoinformcontables:</strong>
+  <%= @empleado.fechaingresoinformcontables %>
+</p>
+
+<%= link_to 'Edit', edit_empleado_path(@empleado) %> |
+<%= link_to 'Back', empleados_path %>

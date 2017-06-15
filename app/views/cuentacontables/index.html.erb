@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cuentacontables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idtipocuenta</th>
+      <th>Nombrecuentacontable</th>
+      <th>Fechaingresocuentacontab</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cuentacontables.each do |cuentacontable| %>
+      <tr>
+        <td><%= cuentacontable.idtipocuenta %></td>
+        <td><%= cuentacontable.nombrecuentacontable %></td>
+        <td><%= cuentacontable.fechaingresocuentacontab %></td>
+        <td><%= link_to 'Show', cuentacontable %></td>
+        <td><%= link_to 'Edit', edit_cuentacontable_path(cuentacontable) %></td>
+        <td><%= link_to 'Destroy', cuentacontable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cuentacontable', new_cuentacontable_path %>

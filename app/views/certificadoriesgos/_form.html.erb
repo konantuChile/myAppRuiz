@@ -1,0 +1,41 @@
+<%= form_for(@certificadoriesgo) do |f| %>
+  <% if @certificadoriesgo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@certificadoriesgo.errors.count, "error") %> prohibited this certificadoriesgo from being saved:</h2>
+
+      <ul>
+      <% @certificadoriesgo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idcliente %><br>
+    <%= f.text_field :idcliente %>
+  </div>
+  <div class="field">
+    <%= f.label :idtipomoneda %><br>
+    <%= f.text_field :idtipomoneda %>
+  </div>
+  <div class="field">
+    <%= f.label :idanalista %><br>
+    <%= f.number_field :idanalista %>
+  </div>
+  <div class="field">
+    <%= f.label :idencargado %><br>
+    <%= f.number_field :idencargado %>
+  </div>
+  <div class="field">
+    <%= f.label :fechacertificadoriesgo %><br>
+    <%= f.date_select :fechacertificadoriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :montoaprobado %><br>
+    <%= f.text_field :montoaprobado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

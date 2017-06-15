@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rutempresa: MyText
+  montomaxgarantia: 9.99
+  fechaingresoaval: 2017-06-15
+
+two:
+  rutempresa: MyText
+  montomaxgarantia: 9.99
+  fechaingresoaval: 2017-06-15

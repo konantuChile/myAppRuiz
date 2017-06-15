@@ -1,0 +1,25 @@
+<%= form_for(@avalesencertificadoriesgo) do |f| %>
+  <% if @avalesencertificadoriesgo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@avalesencertificadoriesgo.errors.count, "error") %> prohibited this avalesencertificadoriesgo from being saved:</h2>
+
+      <ul>
+      <% @avalesencertificadoriesgo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idaval %><br>
+    <%= f.text_area :idaval %>
+  </div>
+  <div class="field">
+    <%= f.label :fechahoraingreso %><br>
+    <%= f.date_select :fechahoraingreso %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

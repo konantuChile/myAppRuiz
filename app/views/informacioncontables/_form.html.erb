@@ -1,0 +1,41 @@
+<%= form_for(@informacioncontable) do |f| %>
+  <% if @informacioncontable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@informacioncontable.errors.count, "error") %> prohibited this informacioncontable from being saved:</h2>
+
+      <ul>
+      <% @informacioncontable.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :correlativoinformacion %><br>
+    <%= f.number_field :correlativoinformacion %>
+  </div>
+  <div class="field">
+    <%= f.label :idtipomoneda %><br>
+    <%= f.text_field :idtipomoneda %>
+  </div>
+  <div class="field">
+    <%= f.label :idcuentacontable %><br>
+    <%= f.text_area :idcuentacontable %>
+  </div>
+  <div class="field">
+    <%= f.label :montoinforcontable %><br>
+    <%= f.text_field :montoinforcontable %>
+  </div>
+  <div class="field">
+    <%= f.label :periodoinforcontable %><br>
+    <%= f.text_area :periodoinforcontable %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresoinformcontables %><br>
+    <%= f.date_select :fechaingresoinformcontables %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

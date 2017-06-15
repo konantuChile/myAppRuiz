@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idtipomoneda: MyString
+  idanalista: 1
+  idejecutivo: 1
+  idestadoproceso: 1
+  fechahoraingreso: 2017-06-15
+  montosolicitado: 9.99
+
+two:
+  idtipomoneda: MyString
+  idanalista: 1
+  idejecutivo: 1
+  idestadoproceso: 1
+  fechahoraingreso: 2017-06-15
+  montosolicitado: 9.99

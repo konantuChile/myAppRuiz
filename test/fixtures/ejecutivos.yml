@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idcliente: MyString
+  idempleado: 1
+  cantidadmaxclientes: 1
+  fechaingresoejecutivo: 2017-06-15
+
+two:
+  idcliente: MyString
+  idempleado: 1
+  cantidadmaxclientes: 1
+  fechaingresoejecutivo: 2017-06-15

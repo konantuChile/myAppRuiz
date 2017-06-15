@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Estudioriesgos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idestadoproceso</th>
+      <th>Idanalista</th>
+      <th>Fechainicioestudioriesgo</th>
+      <th>Fechaterminoestudioriesgo</th>
+      <th>Observacionestudio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estudioriesgos.each do |estudioriesgo| %>
+      <tr>
+        <td><%= estudioriesgo.idestadoproceso %></td>
+        <td><%= estudioriesgo.idanalista %></td>
+        <td><%= estudioriesgo.fechainicioestudioriesgo %></td>
+        <td><%= estudioriesgo.fechaterminoestudioriesgo %></td>
+        <td><%= estudioriesgo.observacionestudio %></td>
+        <td><%= link_to 'Show', estudioriesgo %></td>
+        <td><%= link_to 'Edit', edit_estudioriesgo_path(estudioriesgo) %></td>
+        <td><%= link_to 'Destroy', estudioriesgo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estudioriesgo', new_estudioriesgo_path %>

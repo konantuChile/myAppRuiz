@@ -1,0 +1,25 @@
+<%= form_for(@nivelriesgo) do |f| %>
+  <% if @nivelriesgo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nivelriesgo.errors.count, "error") %> prohibited this nivelriesgo from being saved:</h2>
+
+      <ul>
+      <% @nivelriesgo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombrenivelriesgo %><br>
+    <%= f.text_area :nombrenivelriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresonivriesgo %><br>
+    <%= f.date_select :fechaingresonivriesgo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

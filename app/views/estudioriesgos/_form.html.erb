@@ -1,0 +1,37 @@
+<%= form_for(@estudioriesgo) do |f| %>
+  <% if @estudioriesgo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@estudioriesgo.errors.count, "error") %> prohibited this estudioriesgo from being saved:</h2>
+
+      <ul>
+      <% @estudioriesgo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idestadoproceso %><br>
+    <%= f.number_field :idestadoproceso %>
+  </div>
+  <div class="field">
+    <%= f.label :idanalista %><br>
+    <%= f.number_field :idanalista %>
+  </div>
+  <div class="field">
+    <%= f.label :fechainicioestudioriesgo %><br>
+    <%= f.date_select :fechainicioestudioriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaterminoestudioriesgo %><br>
+    <%= f.date_select :fechaterminoestudioriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :observacionestudio %><br>
+    <%= f.text_area :observacionestudio %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

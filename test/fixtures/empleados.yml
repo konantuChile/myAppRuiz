@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombreempleado: MyText
+  apellidopaternoempleado: MyText
+  apellidomaternoempleado: MyText
+  emailempleado: MyText
+  fechaingresoinformcontables: 2017-06-15
+
+two:
+  nombreempleado: MyText
+  apellidopaternoempleado: MyText
+  apellidomaternoempleado: MyText
+  emailempleado: MyText
+  fechaingresoinformcontables: 2017-06-15

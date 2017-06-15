@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombreestadoproceso:</strong>
+  <%= @estadoproceso.nombreestadoproceso %>
+</p>
+
+<p>
+  <strong>Fechaingresoestado:</strong>
+  <%= @estadoproceso.fechaingresoestado %>
+</p>
+
+<%= link_to 'Edit', edit_estadoproceso_path(@estadoproceso) %> |
+<%= link_to 'Back', estadoprocesos_path %>

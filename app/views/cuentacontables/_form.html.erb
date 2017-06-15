@@ -1,0 +1,29 @@
+<%= form_for(@cuentacontable) do |f| %>
+  <% if @cuentacontable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cuentacontable.errors.count, "error") %> prohibited this cuentacontable from being saved:</h2>
+
+      <ul>
+      <% @cuentacontable.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idtipocuenta %><br>
+    <%= f.text_field :idtipocuenta %>
+  </div>
+  <div class="field">
+    <%= f.label :nombrecuentacontable %><br>
+    <%= f.text_area :nombrecuentacontable %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresocuentacontab %><br>
+    <%= f.date_select :fechaingresocuentacontab %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idcliente:</strong>
+  <%= @ejecutivo.idcliente %>
+</p>
+
+<p>
+  <strong>Idempleado:</strong>
+  <%= @ejecutivo.idempleado %>
+</p>
+
+<p>
+  <strong>Cantidadmaxclientes:</strong>
+  <%= @ejecutivo.cantidadmaxclientes %>
+</p>
+
+<p>
+  <strong>Fechaingresoejecutivo:</strong>
+  <%= @ejecutivo.fechaingresoejecutivo %>
+</p>
+
+<%= link_to 'Edit', edit_ejecutivo_path(@ejecutivo) %> |
+<%= link_to 'Back', ejecutivos_path %>

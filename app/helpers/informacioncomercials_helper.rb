@@ -1,0 +1,2 @@
+module InformacioncomercialsHelper
+end

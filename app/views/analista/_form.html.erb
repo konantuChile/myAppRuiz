@@ -1,0 +1,33 @@
+<%= form_for(@analistum) do |f| %>
+  <% if @analistum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@analistum.errors.count, "error") %> prohibited this analistum from being saved:</h2>
+
+      <ul>
+      <% @analistum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idempleado %><br>
+    <%= f.number_field :idempleado %>
+  </div>
+  <div class="field">
+    <%= f.label :idencargado %><br>
+    <%= f.number_field :idencargado %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidadmaxanalisis %><br>
+    <%= f.number_field :cantidadmaxanalisis %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresoanalista %><br>
+    <%= f.date_select :fechaingresoanalista %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Informacioncomercialclientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idcliente</th>
+      <th>Idestudioriesgo</th>
+      <th>Idnivelriesgo</th>
+      <th>Resultadoinforcomercial</th>
+      <th>Resultadoinforcontable</th>
+      <th>Fechafincompromisoinformacion</th>
+      <th>Fechaingresoinfcomercial</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @informacioncomercialclientes.each do |informacioncomercialcliente| %>
+      <tr>
+        <td><%= informacioncomercialcliente.idcliente %></td>
+        <td><%= informacioncomercialcliente.idestudioriesgo %></td>
+        <td><%= informacioncomercialcliente.idnivelriesgo %></td>
+        <td><%= informacioncomercialcliente.resultadoinforcomercial %></td>
+        <td><%= informacioncomercialcliente.resultadoinforcontable %></td>
+        <td><%= informacioncomercialcliente.fechafincompromisoinformacion %></td>
+        <td><%= informacioncomercialcliente.fechaingresoinfcomercial %></td>
+        <td><%= link_to 'Show', informacioncomercialcliente %></td>
+        <td><%= link_to 'Edit', edit_informacioncomercialcliente_path(informacioncomercialcliente) %></td>
+        <td><%= link_to 'Destroy', informacioncomercialcliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Informacioncomercialcliente', new_informacioncomercialcliente_path %>

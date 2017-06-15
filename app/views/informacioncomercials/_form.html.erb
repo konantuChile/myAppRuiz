@@ -1,0 +1,37 @@
+<%= form_for(@informacioncomercial) do |f| %>
+  <% if @informacioncomercial.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@informacioncomercial.errors.count, "error") %> prohibited this informacioncomercial from being saved:</h2>
+
+      <ul>
+      <% @informacioncomercial.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idtipomoneda %><br>
+    <%= f.text_field :idtipomoneda %>
+  </div>
+  <div class="field">
+    <%= f.label :correlativoinformacion %><br>
+    <%= f.number_field :correlativoinformacion %>
+  </div>
+  <div class="field">
+    <%= f.label :fechainforcomercial %><br>
+    <%= f.date_select :fechainforcomercial %>
+  </div>
+  <div class="field">
+    <%= f.label :montoinforcomercial %><br>
+    <%= f.text_field :montoinforcomercial %>
+  </div>
+  <div class="field">
+    <%= f.label :fechahoraingreso %><br>
+    <%= f.date_select :fechahoraingreso %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

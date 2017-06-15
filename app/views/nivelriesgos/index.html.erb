@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Nivelriesgos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombrenivelriesgo</th>
+      <th>Fechaingresonivriesgo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nivelriesgos.each do |nivelriesgo| %>
+      <tr>
+        <td><%= nivelriesgo.nombrenivelriesgo %></td>
+        <td><%= nivelriesgo.fechaingresonivriesgo %></td>
+        <td><%= link_to 'Show', nivelriesgo %></td>
+        <td><%= link_to 'Edit', edit_nivelriesgo_path(nivelriesgo) %></td>
+        <td><%= link_to 'Destroy', nivelriesgo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nivelriesgo', new_nivelriesgo_path %>

@@ -1,0 +1,41 @@
+<%= form_for(@institucionfinanciera) do |f| %>
+  <% if @institucionfinanciera.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@institucionfinanciera.errors.count, "error") %> prohibited this institucionfinanciera from being saved:</h2>
+
+      <ul>
+      <% @institucionfinanciera.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :foliocertificadoriesgo %><br>
+    <%= f.text_field :foliocertificadoriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :nombreinstitucionfinanciera %><br>
+    <%= f.text_area :nombreinstitucionfinanciera %>
+  </div>
+  <div class="field">
+    <%= f.label :direccioninstitucionfinanciera %><br>
+    <%= f.text_area :direccioninstitucionfinanciera %>
+  </div>
+  <div class="field">
+    <%= f.label :emailinstitucionfinanciera %><br>
+    <%= f.text_area :emailinstitucionfinanciera %>
+  </div>
+  <div class="field">
+    <%= f.label :contactoinstitucionfinanciera %><br>
+    <%= f.text_area :contactoinstitucionfinanciera %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresoinstfinanciera %><br>
+    <%= f.date_select :fechaingresoinstfinanciera %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

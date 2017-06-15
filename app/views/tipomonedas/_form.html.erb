@@ -1,0 +1,25 @@
+<%= form_for(@tipomoneda) do |f| %>
+  <% if @tipomoneda.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tipomoneda.errors.count, "error") %> prohibited this tipomoneda from being saved:</h2>
+
+      <ul>
+      <% @tipomoneda.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombretipomoneda %><br>
+    <%= f.text_area :nombretipomoneda %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresotipomo %><br>
+    <%= f.date_select :fechaingresotipomo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

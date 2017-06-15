@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idempleado:</strong>
+  <%= @supervisor.idempleado %>
+</p>
+
+<p>
+  <strong>Fechaingresoencargado:</strong>
+  <%= @supervisor.fechaingresoencargado %>
+</p>
+
+<%= link_to 'Edit', edit_supervisor_path(@supervisor) %> |
+<%= link_to 'Back', supervisors_path %>

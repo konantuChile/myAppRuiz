@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombreestadocliente:</strong>
+  <%= @estadocliente.nombreestadocliente %>
+</p>
+
+<p>
+  <strong>Fechaingresoestadoclie:</strong>
+  <%= @estadocliente.fechaingresoestadoclie %>
+</p>
+
+<%= link_to 'Edit', edit_estadocliente_path(@estadocliente) %> |
+<%= link_to 'Back', estadoclientes_path %>

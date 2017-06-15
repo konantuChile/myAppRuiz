@@ -1,0 +1,2 @@
+module InformacioncontablesHelper
+end

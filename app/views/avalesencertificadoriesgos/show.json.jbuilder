@@ -1,0 +1,1 @@
+json.partial! "avalesencertificadoriesgos/avalesencertificadoriesgo", avalesencertificadoriesgo: @avalesencertificadoriesgo

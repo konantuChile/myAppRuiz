@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Institucionfinancieras</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Foliocertificadoriesgo</th>
+      <th>Nombreinstitucionfinanciera</th>
+      <th>Direccioninstitucionfinanciera</th>
+      <th>Emailinstitucionfinanciera</th>
+      <th>Contactoinstitucionfinanciera</th>
+      <th>Fechaingresoinstfinanciera</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @institucionfinancieras.each do |institucionfinanciera| %>
+      <tr>
+        <td><%= institucionfinanciera.foliocertificadoriesgo %></td>
+        <td><%= institucionfinanciera.nombreinstitucionfinanciera %></td>
+        <td><%= institucionfinanciera.direccioninstitucionfinanciera %></td>
+        <td><%= institucionfinanciera.emailinstitucionfinanciera %></td>
+        <td><%= institucionfinanciera.contactoinstitucionfinanciera %></td>
+        <td><%= institucionfinanciera.fechaingresoinstfinanciera %></td>
+        <td><%= link_to 'Show', institucionfinanciera %></td>
+        <td><%= link_to 'Edit', edit_institucionfinanciera_path(institucionfinanciera) %></td>
+        <td><%= link_to 'Destroy', institucionfinanciera, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Institucionfinanciera', new_institucionfinanciera_path %>

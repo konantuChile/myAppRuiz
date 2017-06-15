@@ -1,0 +1,25 @@
+<%= form_for(@contienen) do |f| %>
+  <% if @contienen.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contienen.errors.count, "error") %> prohibited this contienen from being saved:</h2>
+
+      <ul>
+      <% @contienen.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :foliocertificadoriesgo %><br>
+    <%= f.text_field :foliocertificadoriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :idavalesencertificados %><br>
+    <%= f.number_field :idavalesencertificados %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

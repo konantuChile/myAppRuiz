@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  foliocertificadoriesgo: 9.99
+  idavalesencertificados: 1
+
+two:
+  foliocertificadoriesgo: 9.99
+  idavalesencertificados: 1

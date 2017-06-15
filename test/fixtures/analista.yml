@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idempleado: 1
+  idencargado: 1
+  cantidadmaxanalisis: 1
+  fechaingresoanalista: 2017-06-15
+
+two:
+  idempleado: 1
+  idencargado: 1
+  cantidadmaxanalisis: 1
+  fechaingresoanalista: 2017-06-15

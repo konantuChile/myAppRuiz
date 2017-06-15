@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ejecutivos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idcliente</th>
+      <th>Idempleado</th>
+      <th>Cantidadmaxclientes</th>
+      <th>Fechaingresoejecutivo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ejecutivos.each do |ejecutivo| %>
+      <tr>
+        <td><%= ejecutivo.idcliente %></td>
+        <td><%= ejecutivo.idempleado %></td>
+        <td><%= ejecutivo.cantidadmaxclientes %></td>
+        <td><%= ejecutivo.fechaingresoejecutivo %></td>
+        <td><%= link_to 'Show', ejecutivo %></td>
+        <td><%= link_to 'Edit', edit_ejecutivo_path(ejecutivo) %></td>
+        <td><%= link_to 'Destroy', ejecutivo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ejecutivo', new_ejecutivo_path %>

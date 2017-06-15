@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Informacioncontables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Correlativoinformacion</th>
+      <th>Idtipomoneda</th>
+      <th>Idcuentacontable</th>
+      <th>Montoinforcontable</th>
+      <th>Periodoinforcontable</th>
+      <th>Fechaingresoinformcontables</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @informacioncontables.each do |informacioncontable| %>
+      <tr>
+        <td><%= informacioncontable.correlativoinformacion %></td>
+        <td><%= informacioncontable.idtipomoneda %></td>
+        <td><%= informacioncontable.idcuentacontable %></td>
+        <td><%= informacioncontable.montoinforcontable %></td>
+        <td><%= informacioncontable.periodoinforcontable %></td>
+        <td><%= informacioncontable.fechaingresoinformcontables %></td>
+        <td><%= link_to 'Show', informacioncontable %></td>
+        <td><%= link_to 'Edit', edit_informacioncontable_path(informacioncontable) %></td>
+        <td><%= link_to 'Destroy', informacioncontable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Informacioncontable', new_informacioncontable_path %>

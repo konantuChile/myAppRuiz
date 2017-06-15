@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  correlativoinformacion: 1
+  idtipomoneda: MyString
+  idcuentacontable: MyText
+  montoinforcontable: 9.99
+  periodoinforcontable: MyText
+  fechaingresoinformcontables: 2017-06-15
+
+two:
+  correlativoinformacion: 1
+  idtipomoneda: MyString
+  idcuentacontable: MyText
+  montoinforcontable: 9.99
+  periodoinforcontable: MyText
+  fechaingresoinformcontables: 2017-06-15

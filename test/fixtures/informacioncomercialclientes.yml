@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idcliente: MyString
+  idestudioriesgo: 1
+  idnivelriesgo: 1
+  resultadoinforcomercial: 9.99
+  resultadoinforcontable: 9.99
+  fechafincompromisoinformacion: 2017-06-15
+  fechaingresoinfcomercial: 2017-06-15
+
+two:
+  idcliente: MyString
+  idestudioriesgo: 1
+  idnivelriesgo: 1
+  resultadoinforcomercial: 9.99
+  resultadoinforcontable: 9.99
+  fechafincompromisoinformacion: 2017-06-15
+  fechaingresoinfcomercial: 2017-06-15

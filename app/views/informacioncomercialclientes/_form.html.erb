@@ -1,0 +1,45 @@
+<%= form_for(@informacioncomercialcliente) do |f| %>
+  <% if @informacioncomercialcliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@informacioncomercialcliente.errors.count, "error") %> prohibited this informacioncomercialcliente from being saved:</h2>
+
+      <ul>
+      <% @informacioncomercialcliente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idcliente %><br>
+    <%= f.text_field :idcliente %>
+  </div>
+  <div class="field">
+    <%= f.label :idestudioriesgo %><br>
+    <%= f.number_field :idestudioriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :idnivelriesgo %><br>
+    <%= f.number_field :idnivelriesgo %>
+  </div>
+  <div class="field">
+    <%= f.label :resultadoinforcomercial %><br>
+    <%= f.text_field :resultadoinforcomercial %>
+  </div>
+  <div class="field">
+    <%= f.label :resultadoinforcontable %><br>
+    <%= f.text_field :resultadoinforcontable %>
+  </div>
+  <div class="field">
+    <%= f.label :fechafincompromisoinformacion %><br>
+    <%= f.date_select :fechafincompromisoinformacion %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresoinfcomercial %><br>
+    <%= f.date_select :fechaingresoinfcomercial %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

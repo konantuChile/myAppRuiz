@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Avalesencertificadoriesgos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idaval</th>
+      <th>Fechahoraingreso</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @avalesencertificadoriesgos.each do |avalesencertificadoriesgo| %>
+      <tr>
+        <td><%= avalesencertificadoriesgo.idaval %></td>
+        <td><%= avalesencertificadoriesgo.fechahoraingreso %></td>
+        <td><%= link_to 'Show', avalesencertificadoriesgo %></td>
+        <td><%= link_to 'Edit', edit_avalesencertificadoriesgo_path(avalesencertificadoriesgo) %></td>
+        <td><%= link_to 'Destroy', avalesencertificadoriesgo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Avalesencertificadoriesgo', new_avalesencertificadoriesgo_path %>

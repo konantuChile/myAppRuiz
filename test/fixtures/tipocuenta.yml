@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombretipocuenta: MyText
+  fechaingresotipocuenta: 2017-06-15
+
+two:
+  nombretipocuenta: MyText
+  fechaingresotipocuenta: 2017-06-15

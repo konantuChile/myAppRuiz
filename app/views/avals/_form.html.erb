@@ -1,0 +1,29 @@
+<%= form_for(@aval) do |f| %>
+  <% if @aval.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aval.errors.count, "error") %> prohibited this aval from being saved:</h2>
+
+      <ul>
+      <% @aval.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :rutempresa %><br>
+    <%= f.text_area :rutempresa %>
+  </div>
+  <div class="field">
+    <%= f.label :montomaxgarantia %><br>
+    <%= f.text_field :montomaxgarantia %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresoaval %><br>
+    <%= f.date_select :fechaingresoaval %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tipocuenta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombretipocuenta</th>
+      <th>Fechaingresotipocuenta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tipocuenta.each do |tipocuentum| %>
+      <tr>
+        <td><%= tipocuentum.nombretipocuenta %></td>
+        <td><%= tipocuentum.fechaingresotipocuenta %></td>
+        <td><%= link_to 'Show', tipocuentum %></td>
+        <td><%= link_to 'Edit', edit_tipocuentum_path(tipocuentum) %></td>
+        <td><%= link_to 'Destroy', tipocuentum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tipocuentum', new_tipocuentum_path %>

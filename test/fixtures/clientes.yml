@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idestadocliente: MyString
+  idtipomoneda: MyString
+  rutempresa: MyText
+  lineacredito: 9.99
+  fechaingresocliente: 2017-06-15
+
+two:
+  idestadocliente: MyString
+  idtipomoneda: MyString
+  rutempresa: MyText
+  lineacredito: 9.99
+  fechaingresocliente: 2017-06-15

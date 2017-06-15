@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idtipomoneda: MyString
+  correlativoinformacion: 1
+  fechainforcomercial: 2017-06-15
+  montoinforcomercial: 9.99
+  fechahoraingreso: 2017-06-15
+
+two:
+  idtipomoneda: MyString
+  correlativoinformacion: 1
+  fechainforcomercial: 2017-06-15
+  montoinforcomercial: 9.99
+  fechahoraingreso: 2017-06-15

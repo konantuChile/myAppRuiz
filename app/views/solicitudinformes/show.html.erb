@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Idtipomoneda:</strong>
+  <%= @solicitudinforme.idtipomoneda %>
+</p>
+
+<p>
+  <strong>Idanalista:</strong>
+  <%= @solicitudinforme.idanalista %>
+</p>
+
+<p>
+  <strong>Idejecutivo:</strong>
+  <%= @solicitudinforme.idejecutivo %>
+</p>
+
+<p>
+  <strong>Idestadoproceso:</strong>
+  <%= @solicitudinforme.idestadoproceso %>
+</p>
+
+<p>
+  <strong>Fechahoraingreso:</strong>
+  <%= @solicitudinforme.fechahoraingreso %>
+</p>
+
+<p>
+  <strong>Montosolicitado:</strong>
+  <%= @solicitudinforme.montosolicitado %>
+</p>
+
+<%= link_to 'Edit', edit_solicitudinforme_path(@solicitudinforme) %> |
+<%= link_to 'Back', solicitudinformes_path %>

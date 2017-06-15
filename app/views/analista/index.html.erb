@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Analista</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Idempleado</th>
+      <th>Idencargado</th>
+      <th>Cantidadmaxanalisis</th>
+      <th>Fechaingresoanalista</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @analista.each do |analistum| %>
+      <tr>
+        <td><%= analistum.idempleado %></td>
+        <td><%= analistum.idencargado %></td>
+        <td><%= analistum.cantidadmaxanalisis %></td>
+        <td><%= analistum.fechaingresoanalista %></td>
+        <td><%= link_to 'Show', analistum %></td>
+        <td><%= link_to 'Edit', edit_analistum_path(analistum) %></td>
+        <td><%= link_to 'Destroy', analistum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Analistum', new_analistum_path %>

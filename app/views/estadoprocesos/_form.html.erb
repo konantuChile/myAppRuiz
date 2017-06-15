@@ -1,0 +1,25 @@
+<%= form_for(@estadoproceso) do |f| %>
+  <% if @estadoproceso.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@estadoproceso.errors.count, "error") %> prohibited this estadoproceso from being saved:</h2>
+
+      <ul>
+      <% @estadoproceso.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombreestadoproceso %><br>
+    <%= f.text_area :nombreestadoproceso %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresoestado %><br>
+    <%= f.date_select :fechaingresoestado %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

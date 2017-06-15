@@ -1,0 +1,33 @@
+<%= form_for(@ejecutivo) do |f| %>
+  <% if @ejecutivo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ejecutivo.errors.count, "error") %> prohibited this ejecutivo from being saved:</h2>
+
+      <ul>
+      <% @ejecutivo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :idcliente %><br>
+    <%= f.text_field :idcliente %>
+  </div>
+  <div class="field">
+    <%= f.label :idempleado %><br>
+    <%= f.number_field :idempleado %>
+  </div>
+  <div class="field">
+    <%= f.label :cantidadmaxclientes %><br>
+    <%= f.number_field :cantidadmaxclientes %>
+  </div>
+  <div class="field">
+    <%= f.label :fechaingresoejecutivo %><br>
+    <%= f.date_select :fechaingresoejecutivo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
